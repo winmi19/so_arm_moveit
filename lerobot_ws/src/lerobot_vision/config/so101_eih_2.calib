@@ -1,0 +1,20 @@
+parameters:
+  name: so101_eih
+  calibration_type: eye_in_hand
+  robot_base_frame: base
+  robot_effector_frame: gripper
+  tracking_base_frame: camera_color_optical_frame
+  tracking_marker_frame: charuco_board
+  freehand_robot_movement: true
+  move_group_namespace: /
+  move_group: manipulator
+transform:
+  translation:
+    x: -0.012391033460754819
+    y: 0.01826763735101567
+    z: 0.0749297837422178
+  rotation:
+    x: 0.13059517300941223
+    y: -0.03343589802504132
+    z: -0.13754330406096635
+    w: 0.9812791554995415

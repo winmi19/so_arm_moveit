@@ -1,0 +1,17 @@
+digraph G {
+"world" -> "base"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_color_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"gripper" -> "camera_color_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_link" -> "camera_depth_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"camera_depth_frame" -> "camera_depth_optical_frame"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"base" -> "shoulder"[label=" Broadcaster: default_authority\nAverage rate: 16.868\nBuffer length: 4.98\nMost recent transform: 1779807007.144102\nOldest transform: 1779807002.164142\n"];
+"shoulder" -> "upper_arm"[label=" Broadcaster: default_authority\nAverage rate: 16.868\nBuffer length: 4.98\nMost recent transform: 1779807007.144102\nOldest transform: 1779807002.164142\n"];
+"upper_arm" -> "lower_arm"[label=" Broadcaster: default_authority\nAverage rate: 16.868\nBuffer length: 4.98\nMost recent transform: 1779807007.144102\nOldest transform: 1779807002.164142\n"];
+"lower_arm" -> "wrist"[label=" Broadcaster: default_authority\nAverage rate: 16.868\nBuffer length: 4.98\nMost recent transform: 1779807007.144102\nOldest transform: 1779807002.164142\n"];
+"wrist" -> "gripper"[label=" Broadcaster: default_authority\nAverage rate: 16.868\nBuffer length: 4.98\nMost recent transform: 1779807007.144102\nOldest transform: 1779807002.164142\n"];
+"gripper" -> "jaw"[label=" Broadcaster: default_authority\nAverage rate: 16.868\nBuffer length: 4.98\nMost recent transform: 1779807007.144102\nOldest transform: 1779807002.164142\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1779807007.149768"[ shape=plaintext ] ;
+}->"camera_link";
+}

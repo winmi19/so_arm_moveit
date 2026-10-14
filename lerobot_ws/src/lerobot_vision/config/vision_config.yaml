@@ -1,0 +1,30 @@
+/**:
+  ros__parameters:
+    # ── 相机参数 ──────────────────────────
+    camera:
+      type: "realsense"
+      width: 848
+      height: 480
+      fps: 30
+
+    # ── 相机内参矩阵 (3x3) ────────────────
+    # 来自 D405 固件标定值 (camera_info topic)
+    camera_matrix:
+      data: [434.165, 0.0, 418.404,
+             0.0, 433.843, 242.973,
+             0.0, 0.0, 1.0]
+
+    # ── 畸变系数 (plumb_bob) ────────────────
+    dist_coeffs:
+      data: [-0.0497, 0.0617, 0.000425, 0.000551, -0.0205]
+
+    # ── YOLO 检测参数 ──────────────────────
+    detector:
+      model_path: "models/yolov8n.pt"
+      confidence_threshold: 0.5
+      nms_threshold: 0.45
+      device: "cpu"
+
+    # ── 工作平面 ──────────────────────────
+    workspace:
+      plane_z: 0.0

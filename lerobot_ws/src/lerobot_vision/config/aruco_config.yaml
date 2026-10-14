@@ -1,0 +1,23 @@
+# ChArUco 标定板参数 — 眼在手上标定
+# 标定板固定在桌面上，相机装在夹爪上
+
+/**:
+  ros__parameters:
+    # 棋盘格方块数 (9x9 = 81 方块)
+    squares_x: 9
+    squares_y: 9
+
+    # 方块边长 (米)
+    square_length: 0.0225
+
+    # ArUco 标记边长 (米)
+    marker_length: 0.020
+
+    # ArUco 字典
+    marker_dict: "DICT_6X6_250"
+
+    # 标定板输出 TF 帧名
+    marker_frame: "charuco_board"
+
+    # 相机光学帧 (标定板位姿相对于此帧发布)
+    parent_frame: "camera_color_optical_frame"

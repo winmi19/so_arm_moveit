@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <ros2_control name="RobotSystem" type="system">
+        <hardware>
+            <plugin>topic_based_ros2_control/TopicBasedSystem</plugin>
+            <param name="joint_commands_topic">/so101_follower/joint_commands</param>
+            <param name="joint_states_topic">/so101_follower/joint_states</param>
+        </hardware>
+        <joint name="1">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="2">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="3">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="4">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="5">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+        <joint name="6">
+            <command_interface name="position"/>
+            <state_interface name="position"/>
+        </joint>
+    </ros2_control>
+</robot>
